@@ -1,0 +1,134 @@
+#NavHeader{
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+#NavList{
+    flex-direction: row;
+    display: flex;
+    visibility: visible;
+    height: 60px;
+    background-color: #1f2328;
+    border: 0;
+    flex: 0 1 100%;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+#NavDropContainer{
+    display: none;
+    visibility: hidden;
+}
+#NavFill{
+    display: none;
+    visibility: hidden;
+}
+.NavSpacer{
+    width:5px;
+    height: 60px;
+    display: flex;
+    padding: 0;
+    background-color: #1f2328;
+    flex-direction: column;
+    display: flex;
+}
+.NavSpacer > div.NavSpacerMid{
+    height:45px;
+    width: 100%;
+    background-color: #2e2e2e;
+}
+.NavSpacer > div.NavSpacerFirst{
+    height: 7.5px;
+    width: 100%;
+    background-color: #1f2328;
+}
+.NavBox{
+    padding: 0 20px;
+    text-align: center;
+    text-wrap: wrap;
+    color: #ffffff;
+    text-align: center;
+    font-size: medium;
+    height: auto;
+    width: auto;
+}
+#NavContainer{
+    border: 0;
+    background-color: #2e2e2e;
+    flex-wrap: nowrap;
+}
+#NavBarContainer{
+    flex: 0;
+    border: 0;
+}
+
+
+/* index/all pages */
+#MainPage{
+    border: 0;
+    background-color: #59636e;
+}
+#MidPage{
+    flex: 0 1 1000px;
+}
+
+
+/* Course pages */
+.CourseContainer{
+    margin:0;
+}
+.CourseMidSpacer{
+    width: 25px;
+}
+#MidPage > p{
+    margin: 12px 15% 0 15%;
+}
+
+
+/* Facilities page */
+.SmallTextAnnotation{
+    width: 55%;
+    margin: 0;
+}
+.SmallTextAnnotation > ul > li{
+    padding-left: 40px;
+}
+.SmallImageDisplay{
+    width: 45%;
+}
+.TwoWideDisplay{
+    flex-direction: row;
+    display: flex;
+}
+#ListTitle{
+    margin-left: 9px;
+    padding-left: 40px;
+}
+
+
+/* Contact pages */
+#CloudLogin > p{
+    margin: 7px 0 15px 0;
+}
+#ContactName{
+    flex-direction: row;
+}
+#ContactName > input{
+    margin-right: 5px;
+    width: 25%;
+}
+#ContactPass{
+    flex-direction: row;
+}
+#ContactPass > input{
+    margin-right: 5px;
+    width: 25%;
+}
+#AdminLvl{
+    flex-direction: row;
+}
+#AdminLvl > input{
+    margin-right: 5px;
+    width: 30px;
+}

@@ -1,0 +1,194 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: #59636e;
+}
+
+#NavContainer{
+    display: flex;
+    border: 0px solid black;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#NavImageContainer{
+    flex:0 0 60px;
+    border: 0px solid black;
+    background-color: #5f1a5f;
+}
+#NavImageContainer > img{
+    width:100%;
+}
+#NavDropDown{
+    flex: 0 0 25%
+}
+#NavList{
+    list-style: none;
+    display: none;
+    visibility: hidden;
+    flex-direction: column;
+    flex:0 0 100%;
+    text-align: left;
+    height: 10000px;
+    background-color: #59636e;
+    margin: 0;
+}
+#NavList > a{
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#NavFill{
+    flex:auto;
+}
+#NavDropContainer{
+    flex:0 0 60px;
+}
+#NavDropContainer > img{
+    width:100%;
+}
+#NavBarContainer{
+    height: 61px;
+    display: flex;
+    border: 1px solid black;
+    background-color: #5f1a5f;
+    flex: 0 1 800px;
+}
+.NavBox{
+    border: 0;
+    padding: 12px 0px 12px 60px;
+    height: 50%;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.NavSpacer{
+    height: 3px;
+    display: flex;
+    padding: 0px 0px 0px 40px;
+}
+.NavSpacer > div{
+    width:10%;
+    background-color: #59636e;
+}
+.NavSpacer > div.NavSpacerMid{
+    width: 90%;
+    background-color: #5f1a5f;
+}
+.NavSpacer > div.NavSpacerFirst{
+    width: 0;
+    background-color: #5f1a5f;
+}
+
+/* index/all pages */
+#MainPage{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #2e2e2e;
+}
+.TextAnnotation{
+    width: 98%;
+    margin: 0 5px 0 5px;
+}
+.TextAnnotation > h3{
+    font-family: Helvetica;
+}
+.TextAnnotation > p{
+    font-family: Arial;
+}
+.ImageDisplay{
+    width: 99%;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+#MidPage{
+    display: flex;
+    flex-direction: column;
+    background-color: #59636e;
+    width: 100%;
+}
+
+
+/* Info pages */
+.TextAnnotation > h4{
+    font-family: Helvetica;
+    margin-bottom: 5px;
+}
+.TextAnnotation > ul{
+    font-family: Arial;
+    margin-top: 0;
+}
+
+
+/* Form based pages */
+#CloudLogin{
+    display: flex;
+    margin: 0 0 0 10px;
+    flex-direction: column;
+    align-items: center;
+}
+#CloudLogin > div{
+    margin-bottom: 8px;
+}
+#CloudLogin > p{
+    font-family: Arial;
+    width: 98%;
+    margin: 7px 0;
+}
+#ContactName{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Arial;
+    justify-content: center;
+}
+#ContactName > label{
+    font-family: Helvetica;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+}
+#ContactName > input{
+    margin-right: 5px;
+    width: 60%;
+}
+#ContactPass{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Arial;
+    justify-content: center;
+}
+#ContactPass > label{
+    font-family: Helvetica;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+}
+#ContactPass > input{
+    margin-right: 5px;
+    width: 60%;
+}
+#AdminLvl{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Arial;
+    justify-content: center;
+}
+#AdminLvl > label{
+    font-family: Helvetica;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+}
+#AdminLvl > input{
+    margin-right: 5px;
+    width: 18px;
+}
