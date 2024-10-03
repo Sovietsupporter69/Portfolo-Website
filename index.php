@@ -11,7 +11,7 @@
     </head>
     <body>
         <?php
-            include("Included/NavigationBar.html");
+            include("Included/NavigationBar.php");
         ?>
         <div id="MainPage">
             <div id="MidPage">
