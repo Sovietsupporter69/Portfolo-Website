@@ -9,17 +9,13 @@
     display: flex;
     visibility: visible;
     height: 60px;
-    background-color: #1f2328;
+    background-color: #262b31;
     border: 0;
     flex: 0 1 100%;
     padding: 0;
     justify-content: flex-start;
 }
 
-#NavDropContainer{
-    display: none;
-    visibility: hidden;
-}
 #NavFill{
     display: none;
     visibility: hidden;
@@ -29,19 +25,19 @@
     height: 60px;
     display: flex;
     padding: 0;
-    background-color: #1f2328;
+    background-color: #262b31;
     flex-direction: column;
     display: flex;
 }
 .NavSpacer > div.NavSpacerMid{
     height:45px;
     width: 100%;
-    background-color: #2e2e2e;
+    background-color: #303030;
 }
 .NavSpacer > div.NavSpacerFirst{
     height: 7.5px;
     width: 100%;
-    background-color: #1f2328;
+    background-color: #262b31;
 }
 .NavBox{
     padding: 0 20px;
@@ -55,7 +51,7 @@
 }
 #NavContainer{
     border: 0;
-    background-color: #2e2e2e;
+    background-color: #262b31;
     flex-wrap: nowrap;
 }
 #NavBarContainer{
@@ -64,50 +60,31 @@
 }
 
 
-/* index/all pages */
+/* all pages */
 #MainPage{
     border: 0;
-    background-color: #59636e;
+    background-color: #383e44;
 }
 #MidPage{
     flex: 0 1 1000px;
 }
 
 
-/* Course pages */
-.CourseContainer{
-    margin:0;
+/* Index page */
+.RowedDisplayBoxes{
+    padding-top: 20px;
 }
-.CourseMidSpacer{
-    width: 25px;
+.TextDisplayBox{
+    flex: 0 1 50%;
+    padding: 0 10px;
 }
-#MidPage > p{
-    margin: 12px 15% 0 15%;
-}
-
-
-/* Facilities page */
-.SmallTextAnnotation{
-    width: 55%;
-    margin: 0;
-}
-.SmallTextAnnotation > ul > li{
-    padding-left: 40px;
-}
-.SmallImageDisplay{
-    width: 45%;
-}
-.TwoWideDisplay{
-    flex-direction: row;
-    display: flex;
-}
-#ListTitle{
-    margin-left: 9px;
-    padding-left: 40px;
+.ImageDisplayBox{
+    flex: 0 1 50%;
+    padding: 0 10px;
 }
 
 
-/* Contact pages */
+/* Login page */
 #CloudLogin > p{
     margin: 7px 0 15px 0;
 }

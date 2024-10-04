@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     flex-direction: column;
-    background-color: #59636e;
+    background-color: #383e44;
 }
 
 #NavContainer{
@@ -12,14 +12,7 @@ body{
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-}
-#NavImageContainer{
-    flex:0 0 60px;
-    border: 0px solid black;
-    background-color: #5f1a5f;
-}
-#NavImageContainer > img{
-    width:100%;
+    background-color: #262b31;
 }
 #NavDropDown{
     flex: 0 0 25%
@@ -32,8 +25,11 @@ body{
     flex:0 0 100%;
     text-align: left;
     height: 10000px;
-    background-color: #59636e;
+    background-color: #383e44;
     margin: 0;
+    transform: translate(-200%, 0);
+    transition: transform 0.65s cubic-bezier(.59,.03,.36,.99);
+    z-index: 1;
 }
 #NavList > a{
     text-decoration: none;
@@ -76,7 +72,7 @@ body{
 }
 .NavSpacer > div{
     width:10%;
-    background-color: #59636e;
+    background-color: #383e44;
 }
 .NavSpacer > div.NavSpacerMid{
     width: 90%;
@@ -87,13 +83,67 @@ body{
     background-color: #5f1a5f;
 }
 
+#BurgerContainer{
+    flex:0 0 60px;
+    border: 0px solid black;
+    background-color: #262b31;
+    z-index: 2;
+}
+#BurgerContainer > *{
+    position: absolute;
+}
+#BarMover{
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+}
+input:checked ~ #NavList{
+    transform: none;
+}
+#Burger{
+    fill: none;
+    stroke-linecap: round;
+    z-index: 2;
+    position: absolute;
+}
+.BurgerLine{
+    stroke-width: 4;
+    stroke: #ffffff;
+    transition-duration: 0.65s;
+    transition-property: stroke, opacity, transform;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+#Burger line:nth-last-of-type(1){
+    transform-origin: center 46px;
+}
+input:checked ~ #BurgerContainer > #Burger > line:nth-last-of-type(1){
+    transform: translate(0, -15px) rotate(-45deg);
+}
+#Burger line:nth-last-of-type(2){
+    transform-origin: center 31px;
+}
+input:checked ~ #BurgerContainer > #Burger > line:nth-last-of-type(2){
+    opacity: 0;
+    transform: scale(0.2);
+}
+#Burger line:nth-last-of-type(3){
+    transform-origin: center 16px;
+}
+input:checked ~ #BurgerContainer > #Burger > line:nth-last-of-type(3){
+    transform: translate(0, 15px) rotate(45deg);
+}
+
 /* index/all pages */
 #MainPage{
     display: flex;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    background-color: #2e2e2e;
+    background-color: #3b3b3b;
 }
 .TextAnnotation{
     width: 98%;
@@ -113,23 +163,32 @@ body{
 #MidPage{
     display: flex;
     flex-direction: column;
-    background-color: #59636e;
+    background-color: #383e44;
     width: 100%;
 }
 
 
-/* Info pages */
-.TextAnnotation > h4{
+/* Index page */
+.RowedDisplayBoxes{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+.TextDisplayBox{
+    display: flex;
+    padding: 0 5px;
+}
+.TextDisplayBox > p{
     font-family: Helvetica;
-    margin-bottom: 5px;
+    color: #ffffff;
 }
-.TextAnnotation > ul{
-    font-family: Arial;
-    margin-top: 0;
+.ImageDisplayBox{
+    display: flex;
+    padding: 0 5px;
 }
 
 
-/* Form based pages */
+/* Login page */
 #CloudLogin{
     display: flex;
     margin: 0 0 0 10px;

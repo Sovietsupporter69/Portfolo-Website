@@ -15,10 +15,13 @@
         ?>
         <div id="MainPage">
             <div id="MidPage">
-                <div style="height: 5px; width: 100%"></div>
-                <div ><img src="" class="" alt=""></div>
-                <div class="TextAnnotation">
-                    <p>Welcome to my personal site, there's only one reason you'd find this site so feel free to look around and see what I have to offer. (this site also serves as my personal cloud storage so not having login info is intentional)</p>
+                <div class="RowedDisplayBoxes">
+                    <div class="TextDisplayBox">
+                        <p>Welcome to my personal site, there's only one reason you'd find this site so feel free to look around and see what I have to offer. (this site also serves as my personal cloud storage so not having login info is intentional)</p>
+                    </div>
+                    <div class="ImageDisplayBox">
+
+                    </div>
                 </div>
             </div>
         </div>
